@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MachineLearningApplications\MachineLearningApplications.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DATA\Currencies\" />
+    <Folder Include="DATA\BinaryOperations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DATA\BinaryOperations\AND.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DATA\BinaryOperations\NAND.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DATA\BinaryOperations\OR.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DATA\BinaryOperations\XOR.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DATA\Currencies\USD_TR_Parity.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DATA\Currencies\USD_TR_Parity_1M.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
